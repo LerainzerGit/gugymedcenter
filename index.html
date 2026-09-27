@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071321" />
+    <title>Goodguy Media Center</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="media-center" aria-label="Goodguy Media Center">
+      <div class="backdrop" aria-hidden="true"></div>
+      <div class="backdrop-shade" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Goodguy Media Center home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-name">goodguy<span>MEDIA CENTER</span></span>
+        </a>
+        <div class="system-status">
+          <span class="status-dot"></span>
+          <span>Living room</span>
+          <span class="status-divider"></span>
+          <time id="clock">9:41 PM</time>
+        </div>
+      </header>
+
+      <div class="main-layout">
+        <nav class="navigation" aria-label="Media library">
+          <div class="nav-heading">YOUR LIBRARY</div>
+          <button class="nav-item active" data-view="home">
+            <span class="nav-icon home-icon" aria-hidden="true"></span>
+            <span>Home</span>
+            <span class="nav-chevron" aria-hidden="true">›</span>
+          </button>
+          <button class="nav-item" data-view="movies">
+            <span class="nav-icon film-icon" aria-hidden="true"></span>
+            <span>Movies</span>
+            <span class="nav-count">12</span>
+          </button>
+          <button class="nav-item" data-view="music">
+            <span class="nav-icon music-icon" aria-hidden="true"></span>
+            <span>Music</span>
+            <span class="nav-count">248</span>
+          </button>
+          <button class="nav-item" data-view="pictures">
+            <span class="nav-icon picture-icon" aria-hidden="true"></span>
+            <span>Pictures + Videos</span>
+            <span class="nav-count">86</span>
+          </button>
+          <button class="nav-item" data-view="tv">
+            <span class="nav-icon tv-icon" aria-hidden="true"></span>
+            <span>TV + More</span>
+            <span class="nav-count live-count">LIVE</span>
+          </button>
+          <button class="nav-item sound-control" id="shuffle-sounds" aria-label="Play random sounds" aria-pressed="false" title="Play random sounds">
+            <span class="nav-icon question-icon" aria-hidden="true">?</span>
+            <span>???</span>
+          </button>
+
+          <div class="nav-bottom">
+            <div class="library-status"><span></span> Library up to date</div>
+            <button class="settings-button" aria-label="Settings">
+              <span class="settings-icon" aria-hidden="true">⚙</span> Settings
+            </button>
+          </div>
+        </nav>
+
+        <section class="content" aria-live="polite">
+          <div class="welcome-line"><span id="welcome">TUESDAY, SEPTEMBER 27</span><span class="welcome-rule"></span><span>YOUR HOME FOR ENTERTAINMENT</span></div>
+          <div class="hero">
+            <div class="hero-art" aria-hidden="true"></div>
+            <div class="hero-copy">
+              <div class="eyebrow"><span class="eyebrow-line"></span><span id="hero-kicker">TONIGHT'S PICK</span></div>
+              <h1 id="hero-title">The Long<br />Way Home</h1>
+              <p class="hero-meta" id="hero-meta">A GOODGUY ORIGINAL <span>•</span> 2025 <span>•</span> 1 HR 48 MIN</p>
+              <p class="hero-description" id="hero-description">Somewhere between here and the horizon, everything changes.</p>
+              <div class="hero-actions">
+                <button class="play-button" id="hero-play"><span class="play-triangle" aria-hidden="true"></span><span id="play-label">Play</span></button>
+                <button class="details-button" id="hero-details">More info <span aria-hidden="true">›</span></button>
+              </div>
+            </div>
+            <div class="hero-index"><span id="hero-index">01</span><i></i> 04</div>
+            <div class="hero-progress"><i></i></div>
+          </div>
+
+          <div class="library-heading">
+            <div>
+              <h2 id="shelf-title">Pick up where you left off</h2>
+              <p id="shelf-caption">Your recently played</p>
+            </div>
+            <button class="view-all" id="view-all">View all <span aria-hidden="true">→</span></button>
+          </div>
+
+          <div class="media-row" id="media-row" aria-label="Recently played"></div>
+          <div class="now-playing" id="now-playing" aria-live="polite">
+            <div class="now-art" id="now-art" aria-hidden="true"></div>
+            <div class="now-copy"><span class="now-label">NOW PLAYING</span><strong id="now-title">Nothing playing</strong><span id="now-subtitle">Choose something from your library</span></div>
+            <button class="transport-button" id="transport" aria-label="Play">▶</button>
+            <div class="mini-track"><i></i></div>
+            <span class="track-time">--:--</span>
+            <button class="volume-button" aria-label="Volume">◖))</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

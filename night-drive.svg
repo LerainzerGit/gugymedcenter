@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#123a59"/><stop offset=".48" stop-color="#12638b"/><stop offset="1" stop-color="#071827"/></linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 456 -680 0 1040 470)" gradientUnits="userSpaceOnUse"><stop stop-color="#50c9ec" stop-opacity=".82"/><stop offset="1" stop-color="#1980ab" stop-opacity="0"/></radialGradient>
+    <linearGradient id="road" x1="813" y1="498" x2="820" y2="1000" gradientUnits="userSpaceOnUse"><stop stop-color="#1d536c"/><stop offset="1" stop-color="#04101b"/></linearGradient>
+    <linearGradient id="mountain" x1="800" y1="481" x2="800" y2="837" gradientUnits="userSpaceOnUse"><stop stop-color="#143c53"/><stop offset="1" stop-color="#081b2a"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v1000H0z"/><path fill="url(#glow)" d="M0 0h1600v1000H0z"/>
+  <circle cx="1110" cy="430" r="10" fill="#e0faff" opacity=".88" filter="url(#blur)"/><circle cx="1110" cy="430" r="3" fill="#d8fbff" opacity=".85"/>
+  <path d="m0 601 163-138 93 60 219-237 160 211 151-138 133 115 184-204 148 184 164-122 185 153v330H0V601Z" fill="#102c40" opacity=".8"/>
+  <path d="m0 658 199-178 151 120 174-114 157 122 163-167 134 121 172-143 116 128 150-110 184 130v333H0V658Z" fill="url(#mountain)"/>
+  <path d="m101 566 98-86 55 44-54-18-37 32-32-8-30 36Zm456-86 124 106-157-96-46 23 79-33Zm419-39 74 68-114-44-32 20 72-44Zm410 67 91 73-112-53-53 17 74-37Z" fill="#69a9c0" opacity=".3"/>
+  <path d="M0 751c277-73 453-97 801-81 312 15 515 50 799 1v329H0V751Z" fill="#081b29"/>
+  <path d="M581 1000c131-123 193-242 221-374l14-61h94l14 61c31 136 94 253 233 374H581Z" fill="url(#road)" opacity=".93"/>
+  <path d="m794 1000 39-1 24-286-13-55h-18l-13 55-19 287Z" fill="#89e6f3" opacity=".45"/>
+  <path d="M0 875c284-117 437-129 628-141M1600 868c-266-100-440-120-624-134" stroke="#54b6d0" stroke-opacity=".28" stroke-width="2"/>
+  <g fill="#93dff0" opacity=".65"><circle cx="350" cy="689" r="2"/><circle cx="415" cy="651" r="1.5"/><circle cx="1281" cy="688" r="2"/><circle cx="1388" cy="658" r="1.5"/><circle cx="510" cy="727" r="1.5"/><circle cx="1174" cy="737" r="1.5"/></g>
+</svg>
